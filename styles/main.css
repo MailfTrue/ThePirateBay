@@ -1,0 +1,110 @@
+html,
+body,
+* {
+	padding: 0;
+	margin: 0;
+}
+
+#game {
+	width: 100%;
+	height: 100%;
+	background-color: #333;
+}
+
+#canvas {
+	width: 100%;
+	height: 100%;
+	background: url(/images/background.png);
+	background-repeat: no-repeat;
+}
+
+#gun {
+	width: 100px;
+	height: 150px;
+	position: absolute;
+	bottom: 50px;
+	left: 50px;
+}
+
+#gun img {
+	width: 100%;
+	height: 100%;
+	transform: rotate(-45deg);
+}
+
+.menu-wrapper {
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	display: flex;
+	align-items: center;
+	justify-content: center;
+	flex-direction: column;
+}
+
+.menu-wrapper>div {
+	padding: 30px 40px;
+	background-color: #ddda;
+	border-radius: 6px;
+	height: fit-content;
+	margin: 15px 0;
+}
+
+.menu {
+	width: 150px;
+}
+
+.records {
+	width: 200px;
+}
+
+.records table {
+	border-collapse: collapse;
+	width: 100%;
+}
+
+.records th,
+td {
+	padding: 8px;
+	text-align: left;
+	border-bottom: 1px solid #222;
+}
+
+ul,
+ol {
+	list-style: none;
+}
+
+.options li {
+	text-align: center;
+}
+
+.options li:hover {
+	cursor: pointer;
+}
+
+.options li:hover::before,
+.options li:hover::after {
+	content: ' - ';
+}
+
+.pause-button {
+	border: 0;
+	background: transparent;
+	box-sizing: border-box;
+	width: 0;
+	height: 24px;
+	border-color: transparent transparent transparent #202020;
+	transition: 100ms all ease;
+	cursor: pointer;
+	border-style: double;
+	border-width: 0px 0 0px 20px;
+	position: absolute;
+	right: 5px;
+	top: 5px;
+}
+
+.username-field {
+	width: 8em;
+	margin-left: 1em;
+}
